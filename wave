@@ -1,0 +1,30 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /boolean_functions/a
+add wave -noupdate /boolean_functions/b
+add wave -noupdate /boolean_functions/c
+add wave -noupdate /boolean_functions/d
+add wave -noupdate /boolean_functions/w
+add wave -noupdate /boolean_functions/x
+add wave -noupdate /boolean_functions/y
+add wave -noupdate /boolean_functions/z
+add wave -noupdate /boolean_functions/f1
+add wave -noupdate /boolean_functions/f2
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {941 ps}
